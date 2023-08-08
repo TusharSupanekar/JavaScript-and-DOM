@@ -1,0 +1,59 @@
+.btn{
+    background-color:red;
+}
+
+
+h1{
+    font-size: 150px;
+}
+
+h1:hover{
+    background: turquoise;
+}
+
+
+#main{
+    border: 2px solid black;
+    width: 1500px;
+    height: 1000px;
+    background-image: url(./wave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 250px;
+    padding-top: 100px;
+    position: relative;
+    z-index: -1;
+}
+
+#ship{
+    border: 0px solid black;
+    width: 400px;
+    height: 300px;
+    margin-top: 100px;
+    background-image: url(./ship.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    animation-name: ship ;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes ship{
+    from{
+        
+        top: 60px;
+        left: 0px;
+
+    }
+    to{
+        top: 60px;
+        left: 1100px;
+        
+    }
+
+
+}
